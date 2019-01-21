@@ -1,0 +1,13 @@
+cl\minsal\mail\response\Respuesta.class
+cl\minsal\mail\component\MailComponent.class
+cl\minsal\mail\controller\MailController.class
+cl\minsal\mail\conf\RestConfiguration.class
+cl\minsal\mail\init\Initializer.class
+cl\minsal\mail\init\WebAppConfig.class
+cl\minsal\mail\entity\Mail.class
+cl\minsal\mail\dto\BookingConfirmation.class
+cl\minsal\mail\conf\ThymeleafConfig.class
+cl\minsal\mail\conf\SwaggerConfiguration.class
+cl\minsal\mail\conf\MailConf.class
+cl\minsal\mail\contants\ContantsEntity.class
+cl\minsal\mail\util\Utilitaries.class

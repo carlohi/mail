@@ -1,0 +1,14 @@
+package cl.minsal.centros.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import cl.minsal.centros.entity.Traza;
+
+/**
+ * Created by jvasquez.
+ */
+@Repository
+public interface TrazaRepository extends JpaRepository<Traza, String> {
+
+}

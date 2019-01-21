@@ -1,0 +1,73 @@
+package cl.minsal.centros.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+import cl.minsal.centros.contants.ContantsEntity;
+
+/**
+ * Created by marcosjara on 03-08-18.
+ */
+
+@Entity
+@Table(name = "traza", schema = ContantsEntity.SCHEMA)
+public class Traza implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name = "id")
+	@SequenceGenerator(name = "traza_generator", sequenceName = "log.traza_seq")
+	@GeneratedValue(generator = "traza_generator")
+	private Long id;
+	
+	
+	@Column(nullable = false,columnDefinition = "TEXT")
+    private String mesage;
+	
+	/**
+	 * @return the id
+	 */
+	public Long getId() {
+		return id;
+	}
+
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
+	/**
+	 * @return the mesage
+	 */
+	public String getMesage() {
+		return mesage;
+	}
+
+
+	/**
+	 * @param mesage the mesage to set
+	 */
+	public void setMesage(String mesage) {
+		this.mesage = mesage;
+	}
+
+
+	
+	
+	
+
+}

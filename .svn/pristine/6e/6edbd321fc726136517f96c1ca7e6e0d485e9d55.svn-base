@@ -1,0 +1,11 @@
+/home/jose/workspace/Minsal/centros-api-back/src/main/java/cl/minsal/centros/init/Initializer.java
+/home/jose/workspace/Minsal/centros-api-back/src/main/java/cl/minsal/centros/conf/RestConfiguration.java
+/home/jose/workspace/Minsal/centros-api-back/src/main/java/cl/minsal/centros/init/WebAppConfig.java
+/home/jose/workspace/Minsal/centros-api-back/src/main/java/cl/minsal/centros/entity/Traza.java
+/home/jose/workspace/Minsal/centros-api-back/src/main/java/cl/minsal/centros/contants/ContantsEntity.java
+/home/jose/workspace/Minsal/centros-api-back/src/main/java/cl/minsal/centros/conf/SwaggerConfiguration.java
+/home/jose/workspace/Minsal/centros-api-back/src/main/java/cl/minsal/centros/entity/Centro.java
+/home/jose/workspace/Minsal/centros-api-back/src/main/java/cl/minsal/centros/controller/CentroController.java
+/home/jose/workspace/Minsal/centros-api-back/src/main/java/cl/minsal/centros/response/Respuesta.java
+/home/jose/workspace/Minsal/centros-api-back/src/main/java/cl/minsal/centros/repository/CentroRepository.java
+/home/jose/workspace/Minsal/centros-api-back/src/main/java/cl/minsal/centros/repository/TrazaRepository.java

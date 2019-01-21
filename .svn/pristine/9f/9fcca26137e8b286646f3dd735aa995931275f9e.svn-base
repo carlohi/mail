@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="medicamento-api-back:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="medicamento-api-back.war">
+      <element id="artifact" artifact-name="medicamento-api-back:war exploded" />
+    </root>
+  </artifact>
+</component>
