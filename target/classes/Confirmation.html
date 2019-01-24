@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<title>Email Template</title>
+<meta charset="utf-8"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+</head>
+
+<body style="font-family: 'gobCL'; src: url(https://www.minsal.cl/agendamail/Tipografia/gobCL/gobCL_Bold.otf); font-family: 'gobCL'; width: 600px; height: 1500px;">
+	<!-- Header -->
+	<header style="background: url('https://www.minsal.cl/agendamail/img/agenda-header.png') no-repeat center; width:600px; height: 181px; margin-bottom: 6%;">
+		<img style="margin: 8% 0% 0% 8%" th:src="${agendaLogo}"></img> 
+		<img style="margin-left: 17%; margin-bottom: 2%;" th:src="${agendaHd}"></img>
+	</header>
+	<!-- Content -->
+	<div style="height: 950px; text-align: center; margin-bottom: 20%;">
+		<article
+			style="height: 40px; font-size: 40px; margin-top: 30px; text-align: center;">
+			<span style="color:black" th:text="${action}"></span>
+		</article>
+		<p>
+			<img th:src="${imageCheckCircle}"></img>
+		</p>
+		<article style="color: #628390; font-family: Arial; font-size: 17px;">
+			Estimado(a) : <span th:text="${username}"></span>
+			<p th:text="${message}"></p>
+		</article>
+
+		<article
+			style="color: #00C7C7; font-size: 25px; font-family: Arial; margin-bottom: 4%;">
+			Nº FOLIO <span th:text="${folio}"></span>
+		</article>
+		<div
+			style="background-color: #EEF2F3; border: #CDD0D1; width: 544.63px; height: 650px; margin: auto;">
+			<br></br>
+			<p>
+				<img style="vertical-align: -webkit-baseline-middle;" th:src="${agendaIconCalendar}"></img>
+				<span style="font-size: 20px; color: #3D505C; margin-bottom: 3%;">Datos
+					de reserva de su hora de atención</span>
+			</p>
+			<div
+				style="width: 459.8px; height: 122.97px; background-color: #99A6AB; margin: auto; margin-bottom: 2.5%;">
+				<div style="float: left; width: 131px; height: 123px; background-color: #586872;">
+					<img style="margin-top: 12%;" th:src="${agendaHospital}"></img>
+				</div>
+				<div style="float: left; background-color: #99A6AB; padding: 33px 0px 0px 18px; text-align: left;">
+					<article style="font-family: Arial; font-size: 16px; color: #FFFFFF; margin-bottom: 0%;">CENTRO DE SALUDO FAMILIAR</article>
+					<article
+						style="font-family: Arial; font-size: 24px; font-weight: bold; color: #FFFFFF;"
+						th:text="${center}"></article>
+				</div>
+			</div>
+			<div
+				style="width: 459.8px; height: 122.97px; background-color: #99A6AB; margin: auto; margin-bottom: 2.5%;">
+				<div
+					style="float: left; width: 131px; height: 123px; background-color: #586872;">
+					<img style="margin-top: 12%;"
+						th:src="${agendaFecha}"></img>
+				</div>
+				<div
+					style="float: left; background-color: #99A6AB; padding: 33px 0px 0px 18px; text-align: left;">
+					<article
+						style= "font-family: Arial; font-size: 16px; color: #FFFFFF; margin-bottom: 0%; text-transform: uppercase;"
+						th:text="${dayOfWeek}"></article>
+					<article
+						style="font-family: Arial;text-transform: uppercase; font-size: 24px; font-weight: bold; color: #FFFFFF;"
+						th:text="${month}"></article>
+					<article style="font-size: 16px;text-transform: uppercase; color: #FFFFFF; margin-top: 0%;"
+						th:text="${hour}"></article>
+				</div>
+			</div>
+			<div
+				style="width: 459.8px; height: 122.97px; background-color: #99A6AB; margin: auto; margin-bottom: 2.5%;">
+				<div
+					style="float: left; width: 131px; height: 123px; background-color: #586872;">
+					<img style="margin-top: 12%;" th:src="${agendaHospital}"></img>
+				</div>
+				<div
+					style="float: left; background-color: #99A6AB; padding: 33px 0px 0px 18px; text-align: left;">
+					<article
+						style="font-family: Arial; font-size: 16px; color: #FFFFFF; margin-bottom: -8%;">CON
+						MÉDICO GENERAL</article>
+					<article
+						style="font-family: Arial; font-size: 24px; font-weight: bold; color: #FFFFFF;"
+						th:text="${especialist}"></article>
+				</div>
+			</div>
+			<div
+				style="width: 459.8px; height: 122.97px; text-align: left; margin: auto;">
+				<p>
+					<img style="margin-bottom: -1%;" th:src="${imageInfoCircle}"></img>
+					<span
+						style="text-align: left; color: #628390; font-size: 12px; font-family: Arial; width: 421px;">Recuerda
+						que debes traer tu cédula de identidad y la orden médica, en caso
+						que la cita sea un examen o procedimiento. Si tienes dudas, puedes
+						contactarnos al correo <span
+						style="color: #0F69B4; font-size: 12px;">contacto@hospitaldigital.cl</span>
+						o llamar al XXXXXXXXX
+					</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer style="background: url('https://www.minsal.cl/agendamail/img/agenda-footer-fondo.png') no-repeat center; width: 600px; height: 193px;">
+		<img style="margin-left: 7%; margin-top: -1%;" th:src="${agendaLogoMinsal}"></img>
+		<img style="margin-left: 32%; margin-top: 4%;" th:src="${hdFooter}"></img>
+	</footer>
+</body>
+</html>

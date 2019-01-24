@@ -1,24 +1,24 @@
 package cl.minsal.mail.entity;
 
+import java.util.Date;
+
 public class Mail {
 	
 	String user;
 	String folio;
 	String center;
-	String datetime;
+	Date datetime;
 	String professional;
 	String mailTo;
 	//attributes for generic mail sender
-	String imgUrl;
 	String subject;
-	String title;
 	String msg;
-	Integer action;
+	String action;
 	
 	public Mail() {}
 
-	public Mail(String user, String folio, String center, String datetime, String professional, String mailTo,
-			String imgUrl, String subject, String title, String msg, Integer action) {
+	public Mail(String user, String folio, String center, Date datetime, String professional, String mailTo,
+			 String subject, String msg, String action) {
 		super();
 		this.user = user;
 		this.folio = folio;
@@ -26,14 +26,10 @@ public class Mail {
 		this.datetime = datetime;
 		this.professional = professional;
 		this.mailTo = mailTo;
-		this.imgUrl = imgUrl;
 		this.subject = subject;
-		this.title = title;
 		this.msg = msg;
 		this.action = action;
 	}
-
-
 
 	public String getUser() {
 		return user;
@@ -59,11 +55,11 @@ public class Mail {
 		this.center = center;
 	}
 
-	public String getDatetime() {
+	public Date getDatetime() {
 		return datetime;
 	}
 
-	public void setDatetime(String datetime) {
+	public void setDatetime(Date datetime) {
 		this.datetime = datetime;
 	}
 
@@ -91,14 +87,6 @@ public class Mail {
 		this.subject = subject;
 	}
 
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
 	public String getMsg() {
 		return msg;
 	}
@@ -107,22 +95,13 @@ public class Mail {
 		this.msg = msg;
 	}
 
-	public Integer getAction() {
+	public String getAction() {
 		return action;
 	}
 
-	public void setAction(Integer action) {
+	public void setAction(String action) {
 		this.action = action;
 	}
-
-	public String getImgUrl() {
-		return imgUrl;
-	}
-
-	public void setImgUrl(String imgUrl) {
-		this.imgUrl = imgUrl;
-	}
-
 	
 	
 }

@@ -10,4 +10,3 @@ cl\minsal\mail\conf\ThymeleafConfig.class
 cl\minsal\mail\conf\SwaggerConfiguration.class
 cl\minsal\mail\conf\MailConf.class
 cl\minsal\mail\contants\ContantsEntity.class
-cl\minsal\mail\util\Utilitaries.class
