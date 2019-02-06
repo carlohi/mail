@@ -54,7 +54,6 @@ public class MailComponent {
 
         Context context = new Context();
         
-
         context.setVariable("username",mail.getUser());
         context.setVariable("message", mail.getMsg());
         context.setVariable("action", mail.getAction());
@@ -88,7 +87,7 @@ public class MailComponent {
 	
 	public static String getSpanishMonth(Date date) {
 		DateTime dt = new DateTime(date);
-		org.joda.time.format.DateTimeFormatter dtf = DateTimeFormat.forPattern("DD 'de' MMMM ").withLocale(LocaleUtils.toLocale("es_ES"));
+		org.joda.time.format.DateTimeFormatter dtf = DateTimeFormat.forPattern("dd 'de' MMMM ").withLocale(LocaleUtils.toLocale("es_ES"));
 		return dt.toString(dtf);
 	}
 	
